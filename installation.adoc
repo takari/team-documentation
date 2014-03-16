@@ -1,0 +1,74 @@
+== Installation
+
+This chapter covers the installation process for TDM.
+
+=== Before You Start
+
+Before you start installing TDM there are a few things we need to
+establish. The following sections outline a few assumptions about the
+audience for this chapter as well as the prerequisites necessary for a
+successful installation experience.
+
+==== Assumptions
+
+One of the assumptions of TDM is that you are already somewhat
+familiar with Maven terminology. You understand how to install Maven,
+and you also understand how to run Maven from the command-line.  The
+good news is that, if you know how to do these two things, the
+installation process should be very easy for you.
+
+If you are unfamiliar with Maven terminology, and if you have never
+installed Maven before, we suggest that you refer to the existing
+documentation in the Maven book. In general, a familiarity with Maven
+will make the installation and setup process of TDM very easy to
+understand.
+
+==== Prerequisites
+
+TDM is designed and tested for three operating systems: Windows, OSX,
+and Linux running Java 7 or higher.  TDM supports Windows7 or higher,
+OSX 10.7 or higher, and standard Linux distributions running Oracle's
+JDK 7.
+
+Depending on your particular system and setup procedures, you may need
+administrative access to the machine you are installing TDM on. If you
+following the instructions outline below, you will certainly need
+administrative access, but if you understand what you are doing you
+may be able to get away with running TDM from a directory in your home
+directory. We leave this customization to the reader.
+
+=== Downloading TDM
+
+TODO: Where to Download TDM
+
+=== Installing TDM
+
+==== Installing a TDM Distribution
+
+==== Upgrading an Existing Maven Installation
+
+=== Verifying TDM Installation
+
+=== Video: Overview of Installation Process (2 minutes)
+
+TODO
+
+=== Installation Recipes
+
+==== Downloading TDM
+
+===== Problem
+
+===== Solution
+
+===== Discussion
+
+==== Installing TDM
+
+===== Problem
+
+===== Solution
+
+===== Discussion
+
+
