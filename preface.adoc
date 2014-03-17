@@ -5,11 +5,13 @@
 Maven has been around for 10 years. The idea for the project predates
 the release by several years, but the tool you know as Maven has had a
 10th birthday this year and during that decade while the tool has
-changed, the core assumptions and conventions have stood the test
-time.
+changed, the core assumptions and conventions have stood the test of
+time. Ten years later, Maven is used in some of the biggest projects
+in the industry, and the tool has helped to create a healthy ecosystem
+of open source because it made it easy to share components.
 
 The creation of a central repository for Java components is something
-all Java developers are used to, and Maven was the project that
+all Java developers are now used to, and Maven was the project that
 established the first central repository for Java. The idea of
 convention over configuration for Java projects remains important to
 the projects I work with every day almost 10 years later, and while
@@ -17,22 +19,31 @@ other build tools have attempted to create new standards and build
 conventions Maven still provides the best balance between convention
 and flexibility.
 
+If you want your organization to focus on delivering software and if
+you want to avoid creating custom build scripts that are difficult to
+understand and maintain, you use Maven. It provides a model that is
+easy to understand, and it can be adapted to meet most requirements.
+
 What is also clear over these 10 years is that Maven's conventions are
 not for everyone, and this is to be expected. When I hear that people
 are dissatisfied with Maven or when people call it inflexible and
 broken, I agree. Maven isn't aiming to be everything to every build
-engineer. In their case, it is inflexible or broken. On the other
-hand, I've strived to create a tool that was opinionated, and I'm not
-concerned if others disagree. The industry always needs to supply
-people with new options and it is good to see other build tools take a
-stab at the same problem space.
+engineer. If you don't follow the conventions it has clearly outlined,
+it is inflexible or broken. The tool is opinionated, and if these
+opinions are in conflict with your own, then the answer is to
+innovate.
 
 Takari's TDM (officially known as Takari Distribution including Maven)
 is Takari's attempt to address several key issues with Maven in a
-distribution that is aimed at large-scale projects. While features
-like incremental builds and faster parallel builds will certainly be
-relevant to all Maven users, these features have been designed to
-address the needs of build at scale.
+distribution that is aimed at large-scale projects. In my own work
+with Maven I came to the realization that it was time to build a set
+of extensions and customizations on top of Maven that would allow it
+to stay as strong over the next ten years as it has been over the
+last. 
+
+While features like incremental builds and faster parallel
+builds will certainly be relevant to all Maven users, these features
+have been designed to address the needs of build at scale.
 
 === Who is this book for?
 
@@ -40,11 +51,11 @@ This book is written for users who have experience with Maven. While
 Takari does offer Maven training for users, this book will assume that
 you are familiar with basic Maven concepts such as the POM or the
 Maven Lifecycle. With TDM, Takari wanted to make sure that we were
-focused on addressed some critical gaps in the Maven community. Good
-Maven documentation isn't one of these gaps, and if you are looking
-for practical information about Maven's basic concepts, we encourage
-you to either browse the Maven project web site or take a look at the
-Maven books from Sonatype.
+focused on addressing critical gaps in Maven's core and Maven's
+plugins. Good Maven documentation isn't one of these gaps, and if you
+are looking for practical information about Maven's basic concepts, we
+encourage you to browse the Maven project web site:
+http://maven.apache.org
 
 This book is written for any someone currently using Maven or for
 someone evaluating using the TDM distribution to improve an existing
@@ -66,10 +77,10 @@ include a cross-reference to a related section in another chapter.
 
 Takari is available if you have questions about the TDM distribution,
 questions about support, or if you have a suggestion for a new
-feature.  We're very interested in your feedback.
+feature.  We're very interested in your feedback and suggestions.
 
 To get in touch with Takari, we encourage you to send an email to
-info@takari.io
+team@takari.io
 
 ==== Takari Maven Training
 
