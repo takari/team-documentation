@@ -1,0 +1,17 @@
+tdm-book.*.pdf
+tdm-book.*.mobi
+tdm-book.*.epub
+tdm-book.*.html
+tdm-book-*.epub
+*.swp
+latex/*
+!latex/makepdf
+!latex/README.markdown
+!latex/template.tex
+!latex/config.yml
+epub/temp
+*~
+.#*
+figures/*
+*/*.session
+.DS_Store
