@@ -3,7 +3,7 @@
 baseDir=`dirname $0`
 outputDir=${baseDir}/pdf
 
-exclude=('figures' 'figures-dia' 'figures-source' 'latex' 'makepdfs' 'pdf' 'README')
+exclude=('figures' 'figures-dia' 'figures-source' 'latex' 'makepdfs' 'pdf' 'README.markdown')
 dirContent=`ls $baseDir`
 argString=""
 
