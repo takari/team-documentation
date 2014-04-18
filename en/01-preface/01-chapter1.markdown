@@ -44,66 +44,65 @@ address the needs of build at scale.
 
 ## Who is this book for?
 
-This book is written for users who have experience with Maven. While
-Takari does offer Maven training for users, this book will assume that
-you are familiar with basic Maven concepts such as the POM or the
-Maven Lifecycle. With TDM, Takari wanted to make sure that we were
-focused on addressing critical gaps in Maven's core and Maven's
-plugins. Good Maven documentation isn't one of these gaps, and if you
-are looking for practical information about Maven's basic concepts, we
-encourage you to browse the Maven project web site:
+This book is written for users who have experience with Maven. While Takari
+does offer Maven training for users, this book will assume that you are familiar
+with basic Maven concepts such as the POM or the Maven Lifecycle. With TDM,
+Takari wanted to make sure that we were focused on addressing critical gaps in
+Maven's core and Maven's plugins. Good Maven documentation isn't one of these
+gaps, and if you are looking for practical information about Maven's basic
+concepts, we encourage you to browse the Maven project web site at 
 http://maven.apache.org
 
-This book is written for any someone currently using Maven or for
-someone evaluating using the TDM distribution to improve an existing
-Maven build.
+This book is written for someone currently using Maven or for someone
+evaluating using the TDM distribution to improve an existing Maven build.
 
 ## How to read this book
 
-The TDM book has been written as a comprehensive reference to the
-features offered by TDM. If you are new to TDM we encourage you to
-read the introduction, but if you are only interested in learning how
-to use a specific feature or plugin you will be able to skip to an
-individual chapter and get started.
+The TDM book has been written as a comprehensive reference to the features
+offered by TDM. If you are new to TDM we encourage you to read the introduction,
+but if you are only interested in learning how to use a specific feature or
+plugin you will be able to skip to an individual chapter and get started.
 
-We wrote each chapter as a stand-alone document that can be used
-independent of other parts of this book, and when necessary we will
-include a cross-reference to a related section in another chapter.
+We wrote each chapter as a stand-alone document that can be used independent of
+other parts of this book, and when necessary we will include a cross-reference
+to a related section in another chapter.
 
 ## How to Contact Takari
 
-Takari is available if you have questions about the TDM distribution,
-questions about support, or if you have a suggestion for a new
-feature.  We're very interested in your feedback and suggestions.
+Takari is available if you have questions about the TDM distribution, questions
+about support, or if you have a suggestion for a new feature. We're very
+interested in your feedback and suggestions.
+
+Our website at http://takari.io/ contains numerous resources that might be of
+interest to you
 
 To get in touch with Takari, we encourage you to send an email to
 team@takari.io
 
 ### Takari Maven Training
 
-Takari offers virtual training for Maven and custom training classes
-for Takari's TDM distribution.
+Takari offers virtual training for Maven and custom training classes for
+Takari's TDM distribution.
 
-Takari's Introduction to Maven is a virtual training course that was
-designed to focus on practice not theory. This course is designed to
-bring everyone up to a base line of knowledge so teams can collaborate
-on Maven projects more effectively.
+Takari's Introduction to Maven is a virtual training course that was designed
+to focus on practice rather than theory. The course is designed to bring
+everyone up to a base line of knowledge of Maven so teams can collaborate on
+projects more effectively.
 
-For more information about Takari's Maven training, email
-team@takari.io.
+For more information about Takari's Maven training, email training@takari.io.
 
 ### Takari Subscription
 
-Takari offers support for Maven and the TDM distribution with a
-subscription to the TDM distribution. If your organization depends on
-Takari, we encourage you to subscribe to our commercial offering for
-the latest updates and information about the TDM distribution as well
-as for early-access to features included in the TDM distribution.
+Takari offers support for Maven and the TDM distribution with a subscription to
+the TDM distribution. If your organization depends on Takari, we encourage you
+to subscribe to our commercial offering for the latest updates and information
+about the TDM distribution as well as for early-access to features included in
+the TDM distribution.
 
-With a Takari subscription you'll have the ability to receive direct
-support from Takari's team of open source experts.
+With a Takari subscription you'll have the ability to receive direct support
+from Takari's team of open source experts.
 
 ## Acknowledgements
 
-The authors of this book would like to acknowledge the customers of
-Takari for supporting sustainable open source development.
+The authors of this book would like to acknowledge the customers of Takari for
+supporting sustainable open source development.
