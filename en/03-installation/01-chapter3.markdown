@@ -62,12 +62,11 @@ developers to the supported TDM distribution.
 
 Installing the TDM distribution is easy, and if you are familiar with
 installing Maven you'll notice the similarities. Once you have downloaded the
-archive extract it with a commandline tools like 'tar' or 'unzip' or one of the
+archive extract it with a commandline tool like 'tar' or 'unzip' or one of the
 many available applications for your operating system.
 
     unzip tdm-1.0.0.zip 
-
-    tar xfvz tdm-1.0.0.tar.gz
+    tar xvzf tdm-1.0.0.tar.gz
 
 Successful extraction will create a directory with the same name as the archive
 file, omitting the extension.
@@ -75,12 +74,12 @@ file, omitting the extension.
     tdm-1.0.0
 
 As a next step you need to move this directory to a suitable location. The
-requirements are simply that the user that will run TDM has read access to the
+only requirements is that the user that will run TDM has read access to the
 path.
 
-We suggest to follow the operating specific recommendations e.g. on Linux or
-OSX install TDM into /opt or /usr/local and avoid path names containing spaces
-such as "Program Files".
+We suggest to follow the operating system specific recommendations e.g. on
+Linux or OSX install TDM into /opt or /usr/local and avoid path names containing
+spaces such as "Program Files".
 
     /opt/tdm-1.0.0
     C:\tools\tdm-1.0.0
@@ -109,16 +108,6 @@ TODO
     Java home: /Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk/Contents/Home/jre
     Default locale: en_US, platform encoding: UTF-8
     OS name: "mac os x", version: "10.8.5", arch: "x86_64", family: "mac"
-
-
-
-#### Discussion
-
-The TDM distribution is available in two format as a ZIP file and as a
-GZip compressed TAR archive. Select the distribution appropriate to
-your operating system.
-
-
 
 
 Here is an example figure ... have to figure out how that works in the scripts
