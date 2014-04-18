@@ -16,6 +16,12 @@ On MacOS you can do like this::
     * pandoc 1.11.1 or later : http://johnmacfarlane.net/pandoc/installing.html
     * xelatex: http://tug.org/mactex/
 
+# Build it
+
+To build it all just run
+
+    $ ./build.sh
+
 # PDF Output
 
     $ makepdfs en
