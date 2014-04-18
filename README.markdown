@@ -29,3 +29,9 @@ To build it all just run
 # Making Ebooks (and simple HTML)
 
     $ makeebooks en
+
+# Authoring Content
+
+Source files are in en/* as markdown formatted files. 
+
+Line width is set to 80 characters for formatting.
