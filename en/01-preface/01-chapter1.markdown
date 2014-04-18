@@ -2,48 +2,45 @@
 
 ## Welcome from Jason van Zyl
 
-Maven has been around for 10 years. The idea for the project predates
-the release by several years, but the tool you know as Maven has had a
-10th birthday this year and during that decade while the tool has
-changed, the core assumptions and conventions have stood the test of
-time. Ten years later, Maven is used in some of the biggest projects
-in the industry, and the tool has helped to create a healthy ecosystem
-of open source because it made it easy to share components.
+Maven has been around for 10 years. The idea for the project predates the
+release by several years, but the tool you know as Maven has had a 10th birthday
+this year. During that decade, while the tool has changed, the core assumptions
+and conventions have stood the test of time. Ten years later, Maven is used in
+some of the biggest projects in the industry, and the tool has helped to create
+a healthy ecosystem of open source development, because it made it easy to share
+components.
 
-The creation of a central repository for Java components is something
-all Java developers are now used to, and Maven was the project that
-established the first central repository for Java. The idea of
-convention over configuration for Java projects remains important to
-the projects I work with every day almost 10 years later, and while
-other build tools have attempted to create new standards and build
-conventions Maven still provides the best balance between convention
-and flexibility.
+The existence of a central repository for Java components is something all Java
+developers are now used to, and Maven was the project that established the first
+central repository for Java. The idea of convention over configuration for Java
+projects remains important to the projects I work with every day, almost 10
+years later. Other build tools have attempted to create new standards and build
+conventions, yet Maven still provides the best balance between convention and
+flexibility.
 
-If you want your organization to focus on delivering software and if
-you want to avoid creating custom build scripts that are difficult to
-understand and maintain, you use Maven. It provides a model that is
-easy to understand, and it can be adapted to meet most requirements.
+If you want your organization to focus on delivering software and if you want
+to avoid creating custom build scripts that are difficult to understand and
+maintain, you use Maven. It provides a model that is easy to understand, and it
+can be adapted to meet most requirements.
 
-What is also clear over these 10 years is that Maven's conventions are
-not for everyone, and this is to be expected. When I hear that people
-are dissatisfied with Maven or when people call it inflexible and
-broken, I agree. Maven isn't aiming to be everything to every build
-engineer. If you don't follow the conventions it has clearly outlined,
-it is inflexible or broken. The tool is opinionated, and if these
-opinions are in conflict with your own, then the answer is to
-innovate.
+What is also became clear over these 10 years is that Maven's conventions are
+not for everyone, and this is to be expected. When I hear that people are
+dissatisfied with Maven or when people call it inflexible and broken, I agree.
+Maven isn't aiming to be everything to every build engineer. If you don't follow
+the conventions it has clearly outlined, it is inflexible or broken. The tool is
+opinionated, and if these opinions are in conflict with your own, then the
+answer is to innovate.
 
-Takari's TDM (officially known as Takari Distribution including Maven)
-is Takari's attempt to address several key issues with Maven in a
-distribution that is aimed at large-scale projects. In my own work
-with Maven I came to the realization that it was time to build a set
-of extensions and customizations on top of Maven that would allow it
-to stay as strong over the next ten years as it has been over the
-last. 
+Takari's TDM (officially known as Takari Distribution including Maven) is
+Takari's attempt to address several key issues with Maven in a distribution that
+is aimed at large-scale projects. In my own work with Maven I came to the
+realization that it was time to build a set of extensions and customizations on
+top of Maven that would allow it to stay as strong over the next ten years as it
+has been over the last.
 
-While features like incremental builds and faster parallel
-builds will certainly be relevant to all Maven users, these features
-have been designed to address the needs of build at scale.
+While features like incremental builds and faster parallel builds will
+certainly be relevant to all Maven users, these features have been designed to
+address the needs of build at scale.
 
 ## Who is this book for?
 
