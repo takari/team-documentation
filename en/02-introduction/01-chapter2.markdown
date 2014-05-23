@@ -79,12 +79,12 @@ part of where we came from is important to us. While we are focused on
 delivering quality software to our supporters we are also cognizant of the
 larger community.
 
-## Evolving Challenges: Builds at Scale
+## Evolving Challenges - Builds at Scale
 
 The efforts of Takari related to TDM are influenced by the following industry
 trends:
 
-### Changing Technology: Changing Conventions
+### Changing Technology - Changing Conventions
 
 What worked 10 years ago may not be appropriate for today’s builds, but the
 core concepts that drove the creation of Maven are still valid today. Convention

@@ -1,4 +1,6 @@
-# Appendix - Book License - Creative Commons
+# Appendix 
+
+## Book License - Creative Commons
 
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0
 International Public License
