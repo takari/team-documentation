@@ -15,3 +15,7 @@ epub/temp
 */*.session
 .DS_Store
 .project
+site/ebook/*
+site/translations/*
+site/book/*
+site/_site

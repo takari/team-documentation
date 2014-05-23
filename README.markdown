@@ -16,6 +16,11 @@ On MacOS you can do like this::
     * pandoc 1.11.1 or later : http://johnmacfarlane.net/pandoc/installing.html
     * xelatex: http://tug.org/mactex/
 
+For the site
+
+gem install jekyll
+gem install RedCarpet
+    
 # Build it
 
 To build it all just run
@@ -29,6 +34,10 @@ To build it all just run
 # Making Ebooks (and simple HTML)
 
     $ makeebooks en
+    
+# Complete site
+
+
 
 # Authoring Content
 
