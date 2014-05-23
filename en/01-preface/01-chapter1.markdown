@@ -1,8 +1,12 @@
 # Preface
 
+Welcome to the book about the Takari Distribution Maven TDM. We hope you will
+find this book to be a useful resource for getting started with TDM and learning
+more about getting the most out of the advanced features it offers.
+
 ## Welcome from Jason van Zyl
 
-Maven has been around for 10 years. The idea for the project predates the
+Maven has been around for over 10 years. The idea for the project predates the
 release by several years, but the tool you know as Maven has had a 10th birthday
 this year. During that decade, while the tool has changed, the core assumptions
 and conventions have stood the test of time. Ten years later, Maven is used in

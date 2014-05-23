@@ -19,5 +19,5 @@ export FORMAT=epub
 makeebooks en
 echo "Finished epub Generation - see tdm-book.en.epub"
 
+echo "Generating site - see site/_site or http://localhost:4000"
 ./makesite.sh
-echo "Finished site generation - run cd site;jekyll serve or see site/_site"

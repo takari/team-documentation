@@ -81,7 +81,7 @@ larger community.
 
 ## Evolving Challenges: Builds at Scale
 
-Takari's efforts related to TDM are influenced by the following industry
+The efforts of Takari related to TDM are influenced by the following industry
 trends:
 
 ### Changing Technology: Changing Conventions
