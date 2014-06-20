@@ -5,19 +5,19 @@ set -e
 # fail if a function call is missing an argument
 set -u
 
-echo "Starting PDF Generation"
+echo "build - Starting PDF Generation -----------------------------------------------"
 makepdfs en
-echo "Finshed PDF Generation - see tdm-book.en.pdf"
+echo "build - Finshed PDF Generation - see tdm-book.en.pdf --------------------------"
 
-echo "Starting mobi Generation"
+echo "build - Starting mobi Generation ----------------------------------------------"
 export FORMAT=mobi
 makeebooks en
-echo "Finished mobi Generation - see tdm-book.en.mobi"
+echo "build - Finished mobi Generation - see tdm-book.en.mobi -----------------------"
 
-echo "Starting epub Generation"
+echo "build - Starting epub Generation ----------------------------------------------"
 export FORMAT=epub
 makeebooks en
-echo "Finished epub Generation - see tdm-book.en.epub"
+echo "build - Finished epub Generation - see tdm-book.en.epub -----------------------"
 
-echo "Generating site - see site/_site or http://localhost:4000"
+echo "build - Generating site - see site/_site or http://localhost:4000 -------------"
 ./makesite.sh
