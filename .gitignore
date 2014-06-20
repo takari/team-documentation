@@ -18,4 +18,5 @@ epub/temp
 site/ebook/*
 site/translations/*
 site/book/*
+site/figures
 site/_site
