@@ -45,3 +45,5 @@ site running.
 Source files are in en/* as markdown formatted files. 
 
 Line width is set to 80 characters for formatting.
+
+You can use the Markdown editor available from the Eclipse marketplace.
