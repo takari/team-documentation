@@ -1,4 +1,4 @@
-# Installation
+# Installing TDM
 
 This chapter covers the installation process for TDM.
 
