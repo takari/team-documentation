@@ -114,12 +114,12 @@ Here is an example figure ... have to figure out how that works in the scripts
 yet. Notice that the file name does NOT determine the file .. only to some
 degree. The chapter number is autoinserted based on the folder or so.
 
-Insert 18333fig0101.png
-Figure 1-1. one one
+Insert 18333fig0301.png
+Figure 3-1. one one
 
 If you make some changes and commit again, the next commit stores a pointer to
 the commit that came immediately before it. After two more commits, your history
 might look something like Figure 1-2.
 
-Insert 18333fig0102.png
-Figure 1-2. one two
+Insert 18333fig0302.png
+Figure 3-2. one two
