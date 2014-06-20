@@ -37,7 +37,8 @@ To build it all just run
     
 # Complete site
 
-
+The build.sh script does it all and also launches a server with the
+site running.
 
 # Authoring Content
 
