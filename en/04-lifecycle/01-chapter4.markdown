@@ -75,20 +75,6 @@ testCompile
 * testIncludes
 * testExcludes
 
-## Dependency Analysis
-
-Goals are 
-
-* text
-* jstree
-* dot
-
-those are terrible names... should be more intuitive names
-
-Use with e.g.,
-
-    mvn takari-lifecycle:jstree
-    
 ## Creating source and test Archives
 
 
