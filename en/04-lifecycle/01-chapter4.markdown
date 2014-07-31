@@ -1,9 +1,26 @@
 # The Takari Lifecycle
 
-TDM includes an optimized replacement for the Maven default lifecycle. It
-introduces fully incremental build behavior, simplified configuration and higher
-performance with a smaller footprint of dependencies needed for the execution
-paired with IDE support.
+TDM includes an optimized replacement for the Maven default lifecycle. The 
+Takari Lifecycle Plugin provided you access to a number of significant 
+advantages:
+
+1. One plugin with a small set of dependencies provides equivalent functionality
+   to five plugins with a large set of transitive dependencies. This reduces the 
+   download times to retrieve the needed components as well tje storage space 
+   requirements in your repositories. 
+
+2. The configuration for a number of aspects for your build is centralized to 
+   one plugin and simplified.
+
+3. The reduced complexity of the plugins involved in the build results in higher 
+   build performance on the command line and in the IDE.
+
+4. The build is fully incremental, not only for your source code, but also for 
+   your resources, which in turn again speeds up development cycle and build 
+   times.
+
+5. Dedicated IDE support brings the advantages of the lifecyle to your daily 
+   development work.
 
 ## Overview
 
@@ -16,11 +33,12 @@ extension and replaces the following Maven plugins.
 * Maven Install Plugin
 * Maven Deploy Plugin
 
-some more general stuff to say here.. 
+You can take advantage of all these replacements in your builds or pick and 
+choose. 
 
 ## Activating the Lifecycle
 
-In order to take advantage of the improved lifecycle you have to activate it by
+In order to take advantage of the improved lifecycle, you have to activate it by
 adding the takari-lifecycle-plugin as a build extension.
 
     <build>
@@ -44,9 +62,102 @@ Projects with packaging 'jar' have to be switched to use the 'takari-jar' packag
       <version>1.0</version>
       <packaging>takari-jar</packaging>
 
+The 'takari-jar' packaging defines new lifecycle bindings for your build and 
+replaces the default plugins for the 'jar' packaging with their Takari 
+counterparts. Using the 'takari-jar' packaging is the easiest way to adopt all 
+the new features. 
+
+Alternatively you can use only a specific part, e.g. the new compiler goals only,
+by using the default 'jar' packaging with the 'takari-lifecycle-plugin' added. 
+If you choose this approach, you will need to deactivate (or skip) the plugin you 
+want to replace to avoid interference problems between the takari lifeycle and 
+the default plugin.
+
+An example for using the 'jar' packaging, but replacing the default compiler 
+with the takari lifecycle support can be configured by adding the
+'takari-lifecycl-plugin' and explicitly configuring the goals you want to 
+execute: 
+
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>io.takari.maven.plugins</groupId>
+          <artifactId>takari-lifecycle-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>compile</id>
+              <goals>
+                <goal>compile</goal>
+                <goal>testCompile</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+
+and deactivating the Maven compiler plugin:  
+
+    <build>
+    ....
+      <pluginManagement>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
+            <configuration>
+              <skip>true</skip>
+              <skipMain>true</skipMain>
+            </configuration>
+          </plugin>
+        </plugins>
+      </pluginManagement>
+
+In a similar manner you can configure to use the other goals of the takari 
+lifecycle plugin, replacing specific parts of your default build. 
+
+## Observing the Takari Lifecycle on the Log
+
+Once you have activated the Takari lifecycle, the build log will show all the 
+invocations of the specific goals. For a project with packaging 'pom' this 
+will mainly affect the install and deploy invocations
+
+    [INFO] --- takari-lifecycle-plugin:1.7.4:install (default-install) @ pom-only ---
+    [INFO] Performing incremental build
+    [INFO] Installing .../pom.xml to /~/.m2/repository/.../SNAPSHOT/pom-only-1.0.0-SNAPSHOT.pom
+    [INFO]
+    [INFO] --- takari-lifecycle-plugin:1.7.4:deploy (default-deploy) @ pom-only ---
+    [INFO] Performing incremental build
+    ...
+    Uploaded: http://.../1.0.0-SNAPSHOT/pom-only-1.0.0-20140731.183927-2.pom (2 KB at 8 KB/sec)
+
+A project with packaging 'takari-jar' will log the lifecycle plugin invocations 
+for the resources, compiliation and packaging related goals as well.
+
+Upon first invocation each goal will be performed as usual, executing all steps 
+e.g., compiling all files or copying and filtering all resources. 
+
+    [INFO] --- takari-lifecycle-plugin:1.7.4:process-resources (default-process-resources) @ simple-jar ---
+    [INFO] Previous incremental build state does not exist, performing full build
+
+Subsequent builds, however will be able to access the information about prior 
+builds and execute incrementally. 
+
+    $ mvn compile
+    [INFO] --- takari-lifecycle-plugin:1.7.4:process-resources (default-process-resources) @ simple-jar ---
+    [INFO] Performing incremental build
+    [INFO]
+    [INFO] --- takari-lifecycle-plugin:1.7.4:compile (default-compile) @ simple-jar ---
+    [INFO] Performing incremental build
+    [INFO] Skipped compilation, all 1 sources are up to date
+    
+Note that a 'clean' invocation removes the state information and re-establishes 
+a clean slate.
+
 ## Configuring Resource Filtering and Processing
 
-as usual , but now its incremental in terms of filtering and stuff
+The Takari lifecycle supports the resource configuration just like the Maven 
+resources plugin e.g.,
 
     <build>
       <resources>
@@ -55,6 +166,13 @@ as usual , but now its incremental in terms of filtering and stuff
           <filtering>true</filtering>
         </resource>
       </resources>
+
+In contrast to the Maven resources plugin it however supports incremental 
+resource processing in terms of copying and filtering. It detects any property 
+changes as well as any resource changes and incrementally reprocesses the 
+affected files only. (TODO 
+
+
 
 ## Compiler Configuration
 
@@ -129,3 +247,18 @@ On a jar packaging project the pom and jar are installed and deployed as usual:
     Uploaded: http://.../maven-metadata.xml (781 B at 11.7 KB/sec)
     Uploading: http://.../maven-metadata.xml
     Uploaded: http://.../maven-metadata.xml (295 B at 4.8 KB/sec)
+    
+    
+## Installing M2e Integration
+
+The incremental build behavior of the takari lifecycle is supported by an 
+extension to the Maven support for Eclipse, m2e.
+
+You can install it by choosing Help - Install New Software and adding another 
+software site using the newest subdirectory of 
+
+http://repository.takari.io:8081/nexus/content/sites/m2e.extras/m2eclipse-takari-lifecycle/0.1.0/N/
+
+as the URL. Once the components are loaded in Eclipse you will be able to select 
+the Takari Build Lifecycle and proceed with the install through the dialogs. 
+After a restart of Eclipse the incremental build support will be available.
