@@ -48,7 +48,13 @@ all the formats of the book including the multi page html version.
 
 The rendered site resource are available in site/_site and could potentially be 
 deployed to a production server from there as long as they do not overlap with 
-the files there. 
+the files there.
+
+The site is rendered by copying the markdown from the main folder and reprocessing
+it for multi page html and copying the generated epub, mobi and pdf files into place. 
+Due to this copying Jekyll will not re-render automatically. This was done as a 
+workaround to limit changes. The original book project used two separate git projects. 
+The TDM book simplifies this into one repo with minimal build setup changes.
 
 # Authoring Content
 
