@@ -170,31 +170,79 @@ resources plugin e.g.,
 In contrast to the Maven resources plugin it however supports incremental 
 resource processing in terms of copying and filtering. It detects any property 
 changes as well as any resource changes and incrementally reprocesses the 
-affected files only. (TODO 
+affected files only as shown in the log
 
+    [INFO] --- takari-lifecycle-plugin:1.7.4:process-resources (default-process-resources) @ simple-jar ---
+    [INFO] Performing incremental build
 
+Property changes are sources from the pom file as well as the user settings 
+file.
 
 ## Compiler Configuration
 
-Generic
+The Takari lifecycle compiler integration replaces the Maven compiler plugin to 
+compile main and test source code. It will automatically be used if you use 
+project packaging of 'takari-jar' 
 
-* source and target
-* proc
-* compilerId 
-* and some others
+The compiler integration supports a number of configuration parameters. The 
+source and target parameters allow you to set the respective parameters for the 
+compiler.
 
-compile
+For example, the following configuration can be used to compile Java 1.9 source 
+code to Java 1.9 compatible class files
 
-* includes
-* excludes
+    <plugins>
+      <plugin>
+        <groupId>io.takari.maven.plugins</groupId>
+        <artifactId>takari-lifecycle-plugin</artifactId>
+        <configuration>
+          <source>1.9</source>
+          <target>1.9</target>
+         <configuration>
 
-testCompile
+Alternatively the properties 'maven.compiler.source' and 'maven.compiler.target' 
+can be used. Following is a list of all compiler related configuration options
 
-* testIncludes
-* testExcludes
+compilerId (maven.compiler.compilerId)
+: The default value of 'javac' will invoke the Java compiler of the installed 
+JDK. 'forked-javac' will fork a new process or 'jdt' will use the Eclipse 
+JDT compiler.
 
-## Creating source and test Archives
+debug (maven.compiler.debug)
+: Configures the amount of debug information in the output class files. The 
+default is 'all' or 'true' and includes all available debug information. The 
+opposite is 'none' or 'false', excluding everything. Fine grained control is 
+possible by using a comma separated list of parameters including 'source' 
+(source file debugging information), 'lines' (line number debugging information) 
+and 'vars' (local variable debugging information).
 
+encoding (encoding)
+: The -encoding argument for the Java compiler.
+
+meminitial (maven.compiler.meminitial)
+: The initial size, in megabytes, of the memory allocation pool e.g., '64'.
+
+maxmem (maven.compiler.maxmem)
+: The maximum size, in megabytes, of the memory allocation pool, e.g, '128'.
+
+source (maven.compiler.source)
+: The Java source level argument passed to the compiler. 
+
+target (maven.compiler.source
+: The Java target level argument passed to the compiler.
+
+verbose (maven.compiler.verbose)
+: Controls the verbosity of the compiler output, defaulting to 'false'. 'true' 
+activates verbose output.
+
+showWarnings (maven.compiler.showWarnings)
+
+The 'compile' goal supports specifying 'includes' and 'excludes' and the 
+'testCompile' supports the equivalent 'testIncludes' and 'testExcludes' 
+
+## Packaging jars Archives
+
+Creating source and test
 
 Part of the jar mojo configuration
 
@@ -257,8 +305,8 @@ extension to the Maven support for Eclipse, m2e.
 You can install it by choosing Help - Install New Software and adding another 
 software site using the newest subdirectory of 
 
-http://repository.takari.io:8081/nexus/content/sites/m2e.extras/m2eclipse-takari-lifecycle/0.1.0/N/
+    http://repository.takari.io:8081/nexus/content/sites/m2e.extras/m2eclipse-takari-lifecycle/0.1.0/N/
 
-as the URL. Once the components are loaded in Eclipse you will be able to select 
+as the URL. Once the availabel components are loaded, you will be able to select 
 the Takari Build Lifecycle and proceed with the install through the dialogs. 
 After a restart of Eclipse the incremental build support will be available.
