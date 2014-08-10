@@ -59,7 +59,8 @@ install and deploy plugins in the respective lifecycle phases.
 
 [//]: # (TBD is this enough docs for the pom packaging or do we need to mention anything else, related to shadow POM packaging Jason mentioned to talk to Igor about,)
 
-Projects with packaging 'jar' have to be switched to use the 'takari-jar' packaging.
+Additionally projects with packaging 'jar' have to be switched to use the 
+'takari-jar' packaging. 
 
     <project>
       <modelVersion>4.0.0</modelVersion>
@@ -70,7 +71,8 @@ Projects with packaging 'jar' have to be switched to use the 'takari-jar' packag
 
 The 'takari-jar' packaging defines new lifecycle bindings for your build and 
 replaces the default plugins for the 'jar' packaging with their Takari 
-counterparts. Using the 'takari-jar' packaging is the easiest way to adopt all 
+counterparts. The Maven resources, compiler, jar, install and deploy plugins 
+are replaced. Using the 'takari-jar' packaging is the easiest way to adopt all 
 the new features. 
 
 Alternatively you can use only a specific part, e.g. the new compiler goals only,
