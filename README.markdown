@@ -18,8 +18,8 @@ On MacOS you can do like this::
 
 For the site
 
-gem install jekyll
-gem install RedCarpet
+    gem install jekyll
+    gem install RedCarpet
     
 # Build it
 
@@ -35,7 +35,7 @@ To build it all just run
 
     $ makeebooks en
     
-# Complete site
+# Complete site with multi page HTML 
 
 The build.sh script does it all and also launches a server with the
 site running.
