@@ -25,7 +25,7 @@ advantages:
 ## Overview
 
 The Takari lifecycle is implemented by a single Maven plugin that acts as build
-extension and replaces the following Maven plugins.
+extension and replaces the following Maven plugins:
 
 * Maven Resources Plugin
 * Maven Compiler Plugin
@@ -51,7 +51,13 @@ adding the takari-lifecycle-plugin as a build extension.
       </plugins>
     </build>
 
-This is all the configuration necessary for projects with packaging 'pom'.
+This is all the configuration necessary for projects with packaging 'pom'. The 
+lifecycle bindings are altered so that the takari-lifeycle-plugin replaces the 
+install and deploy plugins in the respective lifecycle phases.
+
+[//]: # (test comment)
+
+[//]: # (TBD is this enough docs for the pom packaging or do we need to mention anything else, related to shadow POM packaging Jason mentioned to talk to Igor about,)
 
 Projects with packaging 'jar' have to be switched to use the 'takari-jar' packaging.
 
