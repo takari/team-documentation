@@ -1,19 +1,19 @@
 # Introduction
 
 This book was created to document the plugins and features available in the
-Takari Distribution including Maven (TDM). This introduction defines what the
-TDM distribution is and introduces the company behind this new
+Takari Extensions for Apache Maven (TEAM). This introduction defines what the
+TEAM distribution is and introduces the company behind this new
 distribution.
 
-## What is TDM?
+## What is TEAM?
 
-TDM stands for the Takari Distribution including Maven. TDM is a collection of
-supported Maven plugins and extensions to core Maven. It is made freely
+TEAM stands for the Takari Extensions for Apache. TEAM is a collection of
+supported Maven plugins and extensions to a core Apache Maven. It is made freely
 available by Takari. Takari is creating new releases every 30-60 days depending
 on the current development schedule.
 
-TDM was created to address several shortcomings in the "stock" Maven
-distribution and TDM includes the following features beyond that of Maven:
+TEAM was created to address several shortcomings in the "stock" Maven
+distribution and TEAM includes the following features beyond that of Maven:
 
 1. Support for incremental build operations
 
@@ -21,9 +21,9 @@ distribution and TDM includes the following features beyond that of Maven:
 
 1. An alternative to SNAPSHOT releases called Generations
 
-### TDM: Advanced Use Cases for Maven
+### TEAM: Advanced Use Cases for Maven
 
-While TDM's features are relevant to all Maven users, these features and
+While TEAM's features are relevant to all Maven users, these features and
 plugins were designed to support development at scale - on projects with
 hundreds or thousands of developers. These advanced builds are often
 characterized by large networks of interdependent groups building and delivering
@@ -38,8 +38,8 @@ to complete. Individual developers are most productive when they can focus on
 incremental builds that don't cause them to set aside hours or days for
 integration.
 
-TDM can be used by any Maven user, but TDM was specifically designed for the
-needs of large software projects. The features added to TDM cater to issues that
+TEAM can be used by any Maven user, but TEAM was specifically designed for the
+needs of large software projects. The features added to TEAM cater to issues that
 arise when hundreds or thousands of developers are collaborating on fast-moving
 projects.
 
@@ -81,7 +81,7 @@ larger community.
 
 ## Evolving Challenges - Builds at Scale
 
-The efforts of Takari related to TDM are influenced by the following industry
+The efforts of Takari related to TEAM are influenced by the following industry
 trends:
 
 ### Changing Technology - Changing Conventions
@@ -99,16 +99,16 @@ of use-cases such as incremental compilation, incremental processing of
 Javascript resources, and other requirements which may not have been of primary
 concern in 2004.
 
-TDM updates the concept of SNAPSHOTS for complex projects and replaces it with
+TEAM updates the concept of SNAPSHOTS for complex projects and replaces it with
 Generations. This is an approach to tracking software releases and relating
 specific point-in-time releases to a commit or branch in a distributed version
 control system.
 
-Over time TDM will release updates to the core APIs and models of Maven to
+Over time TEAM will release updates to the core APIs and models of Maven to
 allow for easier integration with different languages, tools, and technology. It
-is Takari's goal to make sure that TDM's regular releases can fill in the gaps
+is Takari's goal to make sure that TEAM's regular releases can fill in the gaps
 between Maven's far less frequent releases so that changes in technology can be
-quickly addressed by TDM.
+quickly addressed by TEAM.
 
 ### Faster Lifecycles: More Frequent Releases
 
@@ -129,6 +129,6 @@ as often as possible even multiple times a day. This is the emerging reality of
 enterprise software development and Maven's legacy approach to Releases and
 SNAPSHOTs does not lend itself to these, more iterative and agile workflows.
 
-TDM's generations features as well as incremental and parallel builds are aimed
+TEAM's generations features as well as incremental and parallel builds are aimed
 squarely at created more timely and efficient builds for organizations that are
 looking to push to production frequently.
