@@ -1,8 +1,9 @@
 # Preface
 
-Welcome to the book about the Takari Distribution Maven TDM. We hope you will
-find this book to be a useful resource for getting started with TDM and learning
-more about getting the most out of the advanced features it offers.
+Welcome to the book about the Takari Extensions for Apache Maven TEAM and
+related tools and projects. We hope you will find this book to be a useful
+resource for getting started with TEAM and learning more about getting the most
+out of the advanced features it offers.
 
 ## Welcome from Jason van Zyl
 
@@ -35,7 +36,7 @@ the conventions it has clearly outlined, it is inflexible or broken. The tool is
 opinionated, and if these opinions are in conflict with your own, then the
 answer is to innovate.
 
-Takari's TDM (officially known as Takari Distribution including Maven) is
+Takari's TEAM (officially known as Takari Extensions for Apache Maven) is
 Takari's attempt to address several key issues with Maven in a distribution that
 is aimed at large-scale projects. In my own work with Maven I came to the
 realization that it was time to build a set of extensions and customizations on
@@ -58,12 +59,12 @@ concepts, we encourage you to browse the Maven project web site at
 http://maven.apache.org
 
 This book is written for someone currently using Maven or for someone
-evaluating using the TDM distribution to improve an existing Maven build.
+evaluating using the TEAM distribution to improve an existing Maven build.
 
 ## How to read this book
 
-The TDM book has been written as a comprehensive reference to the features
-offered by TDM. If you are new to TDM we encourage you to read the introduction,
+The TEAM book has been written as a comprehensive reference to the features
+offered by TEAM. If you are new to TEAM we encourage you to read the introduction,
 but if you are only interested in learning how to use a specific feature or
 plugin you will be able to skip to an individual chapter and get started.
 
@@ -73,7 +74,7 @@ to a related section in another chapter.
 
 ## How to Contact Takari
 
-Takari is available if you have questions about the TDM distribution, questions
+Takari is available if you have questions about the TEAM distribution, questions
 about support, or if you have a suggestion for a new feature. We're very
 interested in your feedback and suggestions.
 
@@ -86,7 +87,7 @@ team@takari.io
 ### Takari Maven Training
 
 Takari offers virtual training for Maven and custom training classes for
-Takari's TDM distribution.
+Takari's TEAM distribution.
 
 Takari's Introduction to Maven is a virtual training course that was designed
 to focus on practice rather than theory. The course is designed to bring
@@ -97,8 +98,8 @@ For more information about Takari's Maven training, email training@takari.io.
 
 ### Takari Subscription
 
-Takari offers support for Maven and the TDM distribution with a subscription to
-the TDM distribution. If your organization depends on Takari, we encourage you
+Takari offers support for Maven and the TEAM distribution with a subscription to
+the TEAM distribution. If your organization depends on Takari, we encourage you
 to subscribe to our commercial offering for the latest updates and information
 about the TDM distribution as well as for early-access to features included in
 the TDM distribution.
