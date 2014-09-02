@@ -1,16 +1,15 @@
 # Installing TDM
 
-This chapter covers the installation process for TDM.
+This chapter covers the installation process for the Takari Extensions for
+ Apache Maven - TEAM.
 
-## Before You Start
-
-Before you start installing TDM there are a few things to establish. The
+Before you start installing TEAM there are a few things to establish. The
 following sections outline a few assumptions about the audience for this chapter
 as well as the prerequisites necessary for a successful installation.
 
-### Assumptions
+## Assumptions
 
-One of the assumptions of TDM is that you are already somewhat familiar with
+One of the assumptions of TEAM is that you are already somewhat familiar with
 Maven terminology. You understand how to install Maven, and you also understand
 how to run Maven from the command-line. The good news is that, if you know how
 to do these two things, the installation process should be very easy for you.
@@ -20,94 +19,122 @@ Maven before, we suggest that you refer to the existing documentation or attend
 a Takari Maven training. In general, a familiarity with Maven will make the
 installation and setup process of TDM very easy to understand.
 
-### Prerequisites
+## Prerequisites
 
-TDM is designed and tested for 
+TEAM is designed and tested for 
 
 * Microsoft Windows 7 or higher
 * Apple OSX 10.7 or higher and 
 * Modern Linux Distributions
 
-with the Oracle Java Development Kit JDK version 7 installed.
+with the Oracle Java Development Kit JDK version 7 installed. You can verify 
+your JDK installation by running 'java -version' which should result in an
+ output similar to 
+
+    $java -version
+    java version "1.7.0_65"
+    Java(TM) SE Runtime Environment (build 1.7.0_65-b17)
+    Java HotSpot(TM) 64-Bit Server VM (build 24.65-b04, mixed mode)
+ 
 
 Depending on your particular system and setup procedures, you may need
-administrative access to the machine you are installing TDM on. If you following
+administrative access to the machine you are installing TEAM on. If you following
 the instructions outlined below, you will certainly need administrative access,
 but if you understand what you are doing you may be able to get away with
-running TDM from a directory in your home directory. We leave this customization
+running TEAM from a directory in your home directory. We leave this customization
 to the reader.
 
-## Downloading TDM
+## Downloading TEAM
 
-To download TDM go to http://takari.io/download. The TDM distribution is
+To download TEAM go to (http://takari.io/download)[http://takari.io/download]. 
+The TEAM distribution is
 available as both a ZIP and GZip'd tar archive. The two archives contain the
 same distribution and it does not matter, which one you use for your
-installation. 
+installation. The file names of the archives to download will be similar to 
+takari-team-maven-0.9.0.tar.gz or takari-team-maven-0.9.0.zip.
 
 You should download the archive format, which you know how to extract and have
 the compatible tools already installed. Modern operating systems can work with
 both formats easily, although Windows tends to have better support for zip files
 wil tar.gz files are more commonly used on Unix variants such as OSX and Linux.
 
-## Installing TDM
+## Installing TEAM
 
-There are two ways to install TDM on your computer. You can download a complete
-distribution of TDM which includes Apache Maven. Alternatively you can run an
+There are two ways to install TEAM on your computer. You can download a complete
+distribution of TEAM which includes Apache Maven. Alternatively you can run an
 installer that will turn a compatible installation of Apache Maven 3 into a
-functioning installation of TDM. The second option was created for environment
+functioning installation of TEAM. The second option was created for environment
 in which Maven is already installed to make it easier to migrate large groups of
-developers to the supported TDM distribution.
+developers to the supported TEAM distribution.
 
-### Installing a TDM Distribution
+### Installing a TEAM Distribution
 
-Installing the TDM distribution is easy, and if you are familiar with
+Installing the TEAM distribution is easy, and if you are familiar with
 installing Maven you'll notice the similarities. Once you have downloaded the
-archive extract it with a commandline tool like 'tar' or 'unzip' or one of the
+archive extract it with a command line tool like 'tar' or 'unzip' or one of the
 many available applications for your operating system.
 
-    unzip tdm-1.0.0.zip 
-    tar xvzf tdm-1.0.0.tar.gz
+    unzip takari-team-maven-0.9.0.zip 
+    tar xvzf takari-team-maven-0.9.0.tar.gz
 
 Successful extraction will create a directory with the same name as the archive
 file, omitting the extension.
 
-    tdm-1.0.0
+    takari-team-maven-0.9.0
 
 As a next step you need to move this directory to a suitable location. The
-only requirements is that the user that will run TDM has read access to the
+only requirements is that the user that will run TEAM has read access to the
 path.
 
 We suggest to follow the operating system specific recommendations e.g. on
-Linux or OSX install TDM into /opt or /usr/local and avoid path names containing
+Linux or OSX install TEAM into /opt or /usr/local and avoid path names containing
 spaces such as "Program Files".
 
-    /opt/tdm-1.0.0
-    C:\tools\tdm-1.0.0
+    /opt/takari-team-maven-0.9.0
+    C:\tools\takari-team-maven-0.9.0
 
-M2_HOME next
+The next steps should be just as familiar from a standard Maven installation as 
+the simple archive extraction - create a M2_HOME environment variable that 
+points to the folder you just created and add M2_HOME/bin to the PATH. 
 
-### Upgrading an Existing Maven Installation
+On Linux or OSX you can configure this e.g., in your '~/.profile' file with
 
-To upgrade an existing Apache Maven installation, the TDM distribution download
-has included a helpful script to automate the process.
+    export M2_HOME=/opt/takari-team-maven-0.9.0
+    export PATH=M2_HOME/bin:$PATH
 
-TODO
+On Windows you typically configure this via the user interface as a system 
+environment variable. On the command line you can use the set command:
+
+    set M2_HOME=c:\tools\takari-team-maven-0.9.0
+
+Note that the usage of the environment variable is done 
+via '%M2_HOME%' as compared to '$M2_HOME', that the delimiter in the path 
+definition is a semicolon and the path separator is a backslash so your PATH 
+modification will look similar to 
+
+    %M2_HOME%\bin;%PATH%  
+
+### Upgrading an Existing Apache Maven Installation
+
+To upgrade an existing Apache Maven installation....
+
     mvn tdm:install or whatever
 
 
-## Verifying TDM Installation
+## Verifying your TEAM Installation
 
-Once you have installed the TDM distribution, you should verify that you have
-successfully installed the tool. To verify the installation run:
-TODO
+Once you have installed the TEAM distribution, you should verify your setup 
+by running 'mvn -v' or mvn --version', which should display the TEAM version 
+and some further details:
 
     $ mvn -v
-    TDM 1.0.0 (asdf123; 2014-02-14T09:37:52-08:00)
-    Maven home: /opt/tdm-1.0.0
-    Java version: 1.7.0_55, vendor: Oracle Corporation
-    Java home: /Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk/Contents/Home/jre
+    Takari TEAM 0.9.0 (15eb3...; 2014-08-28T10:27:57-07:00)
+    Maven home: /opt/tools/takari-team-maven-0.9.0
+    Java version: 1.7.0_65, vendor: Oracle Corporation
+    Java home: /Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home/jre
     Default locale: en_US, platform encoding: UTF-8
     OS name: "mac os x", version: "10.8.5", arch: "x86_64", family: "mac"
+
 
 
 Here is an example figure ... have to figure out how that works in the scripts
