@@ -46,17 +46,16 @@ to the reader.
 
 ## Downloading TEAM
 
-To download TEAM go to (http://takari.io/download)[http://takari.io/download]. 
-The TEAM distribution is
-available as both a ZIP and GZip'd tar archive. The two archives contain the
-same distribution and it does not matter, which one you use for your
-installation. The file names of the archives to download will be similar to 
-takari-team-maven-0.9.0.tar.gz or takari-team-maven-0.9.0.zip.
+You TEAM can be downloaded from the Central Repository at
+https://repo.maven.apache.org/maven/io/takari/takari-team-maven/. This location
+contains all released versions. The TEAM distribution is available as both a
+GZip'd tar archive in each version specific folder following the Maven
+repository format's naming convention for the archive. E.g. you can download
+version 0.9.0 of TEAM from
 
-You should download the archive format, which you know how to extract and have
-the compatible tools already installed. Modern operating systems can work with
-both formats easily, although Windows tends to have better support for zip files
-wil tar.gz files are more commonly used on Unix variants such as OSX and Linux.
+    https://repo1.maven.org/maven2/io/takari/takari-team-maven/0.9.0/takari-team-maven-0.9.0.tar.gz
+
+resulting in a downloaded archive file name of `takari-team-maven-0.9.0.tar.gz`.
 
 ## Installing TEAM
 
@@ -71,10 +70,9 @@ developers to the supported TEAM distribution.
 
 Installing the TEAM distribution is easy, and if you are familiar with
 installing Maven you'll notice the similarities. Once you have downloaded the
-archive extract it with a command line tool like 'tar' or 'unzip' or one of the
-many available applications for your operating system.
+archive extract it with a command line tool like 'tar' or one of the
+many available archive management applications for your operating system.
 
-    unzip takari-team-maven-0.9.0.zip 
     tar xvzf takari-team-maven-0.9.0.tar.gz
 
 Successful extraction will create a directory with the same name as the archive
