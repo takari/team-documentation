@@ -34,7 +34,7 @@ title: Table of Contents
 "
 
   html += '
-<h1>Takari Extensions for Apache Maven TEAM - Documentation - Table of Contents</h1>
+<h1>Table of Contents</h1>
 '
   html += index
 
