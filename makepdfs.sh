@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# fail if anything errors
+set -e
+# fail if a function call is missing an argument
+set -u
+
 baseDir=`dirname $0`
 outputDir=${baseDir}/pdf
 
@@ -7,7 +12,6 @@ exclude=('figures' 'figures-dia' 'figures-source' 'latex' 'makepdfs' 'pdf' 'READ
 dirContent=`ls $baseDir`
 argString=""
 
-  echo $i;
 
 for dir in $dirContent; do
 	if [ -n $dir ]; then
