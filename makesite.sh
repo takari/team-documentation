@@ -9,9 +9,9 @@ rm -rf site/translations/*
 rm -rf site/figures/* 
 
 echo "makesite - copy ------------------------------------------------------"
-cp -v tdm-book.en.epub site/ebook 
-cp -v tdm-book.en.mobi site/ebook
-cp -v tdm-book.en.pdf site/ebook
+cp -v team-book.en.epub site/ebook 
+cp -v team-book.en.mobi site/ebook
+cp -v team-book.en.pdf site/ebook
 cp -Rv en site/translations/
 cp -Rv figures site/
 cd site

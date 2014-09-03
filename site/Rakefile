@@ -34,7 +34,7 @@ title: Table of Contents
 "
 
   html += '
-<h1>TDM Book - Table of Contents</h1>
+<h1>Takari Extensions for Apache Maven TEAM - Documentation- Table of Contents</h1>
 '
   html += index
 
@@ -133,7 +133,7 @@ def generate_pages(lang, chapter, content)
     layout = lang == 'en' ? 'master' : 'translation'
     html = "---
 layout: #{layout}
-title: TDM Book #{chapter}.#{section} #{full_title}
+title: TEAM Documentation #{chapter}.#{section} #{full_title}
 ---
 "
     if section_match

@@ -1,4 +1,4 @@
-# Installing TDM
+# Installing TEAM
 
 This chapter covers the installation process for the Takari Extensions for
  Apache Maven - TEAM.
@@ -17,7 +17,7 @@ to do these two things, the installation process should be very easy for you.
 If you are unfamiliar with Maven terminology, and if you have never installed
 Maven before, we suggest that you refer to the existing documentation or attend
 a Takari Maven training. In general, a familiarity with Maven will make the
-installation and setup process of TDM very easy to understand.
+installation and setup process of TEAM very easy to understand.
 
 ## Prerequisites
 
@@ -118,7 +118,7 @@ modification will look similar to
 
 To upgrade an existing Apache Maven installation....
 
-    mvn tdm:install or whatever
+    mvn team:install or whatever
 
 
 ## Verifying your TEAM Installation

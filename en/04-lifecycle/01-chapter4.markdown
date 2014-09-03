@@ -1,6 +1,6 @@
 # The Takari Lifecycle
 
-TDM includes an optimized replacement for the Maven default lifecycle. The 
+TEAM includes an optimized replacement for the Maven default lifecycle. The 
 Takari Lifecycle Plugin provided you access to a number of significant 
 advantages:
 

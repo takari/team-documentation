@@ -52,7 +52,7 @@ ARGV.each do |lang|
     puts "convert content for '#{lang}' language"
 
     figure_title = 'Figure'
-    book_title = 'Takari Distribution Maven - Documentation'
+    book_title = 'Takari Extensions for Apache Maven TEAM - Documentation'
     authors = 'Jason van Zyl, Manfred Moser'
     comments = 'licensed under the Creative Commons Attribution-Non Commercial-Share Alike 3.0 license'
 
@@ -66,7 +66,7 @@ ARGV.each do |lang|
     end
     book_content << "</body></html>"
 
-    File.open("tdm-book.#{lang}.html", 'w') do |output|
+    File.open("team-book.#{lang}.html", 'w') do |output|
       output.write(book_content)
     end
 
@@ -79,7 +79,7 @@ ARGV.each do |lang|
       $ebook_convert_cmd = mac_osx_path
     end
 
-    system($ebook_convert_cmd, "tdm-book.#{lang}.html", "tdm-book.#{lang}.#{format}",
+    system($ebook_convert_cmd, "team-book.#{lang}.html", "team-book.#{lang}.#{format}",
            '--cover', 'ebooks/cover.png',
            '--authors', authors,
            '--comments', comments,

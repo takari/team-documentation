@@ -8,8 +8,8 @@ $lang ||= 'en'
 
 namespace :epub do
 	TMP_DIR = File.join('epub', 'temp', $lang)
-	INDEX_FILEPATH = File.join(TMP_DIR, 'tdm-book.html')
-	TARGET_FILEPATH = "tdm-book-#{$lang}.epub"
+	INDEX_FILEPATH = File.join(TMP_DIR, 'team-book.html')
+	TARGET_FILEPATH = "team-book-#{$lang}.epub"
 	
 	SOURCE_FILES = FileList.new(File.join($lang, '0*', '*.markdown')).sort
 	CONVERTED_MK_FILES = SOURCE_FILES.pathmap(File.join(TMP_DIR, '%f'))
@@ -112,7 +112,7 @@ namespace :epub do
 			file << "\n"
 			file << "<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='#{$lang}'>"
 			file << '<head>'
-			file << '<title>TDM - Takari Distribution Maven</title>'
+			file << '<title>Takari Extensions for Apache Maven TEAM</title>'
 			file << '</head>'
 			file << '<body>'
 			file << "\n"
@@ -134,7 +134,7 @@ namespace :epub do
 			'--comments', 'Licensed under the Creative Commons Attribution-Non Commercial-Share Alike 3.0 license',
 			
 			'--cover', 'epub/title.png',
-			'--extra-css', 'epub/tdm-book.css',
+			'--extra-css', 'epub/team-book.css',
 			
 			'--chapter', '//h:h1',
 			'--level1-toc', '//h:h1',

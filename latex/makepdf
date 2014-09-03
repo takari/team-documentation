@@ -199,8 +199,8 @@ languages.each do |lang|
 		end
 
 		unless abort
-			print "\tMoving output to tdm-book.#{lang}.pdf... "
-                        mv("#{dir}/main.pdf", "#$root/tdm-book.#{lang}.pdf")
+			print "\tMoving output to team-book.#{lang}.pdf... "
+                        mv("#{dir}/main.pdf", "#$root/team-book.#{lang}.pdf")
 			puts "done"
 		end
 	end

@@ -1,8 +1,8 @@
-tdm-book.*.pdf
-tdm-book.*.mobi
-tdm-book.*.epub
-tdm-book.*.html
-tdm-book-*.epub
+team-book.*.pdf
+team-book.*.mobi
+team-book.*.epub
+team-book.*.html
+team-book-*.epub
 *.swp
 latex/*
 !latex/makepdf

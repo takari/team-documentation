@@ -51,7 +51,7 @@ address the needs of build at scale.
 
 This book is written for users who have experience with Maven. While Takari
 does offer Maven training for users, this book will assume that you are familiar
-with basic Maven concepts such as the POM or the Maven Lifecycle. With TDM,
+with basic Maven concepts such as the POM or the Maven Lifecycle. With TEAM,
 Takari wanted to make sure that we were focused on addressing critical gaps in
 Maven's core and Maven's plugins. Good Maven documentation isn't one of these
 gaps, and if you are looking for practical information about Maven's basic
@@ -101,8 +101,8 @@ For more information about Takari's Maven training, email training@takari.io.
 Takari offers support for Maven and the TEAM distribution with a subscription to
 the TEAM distribution. If your organization depends on Takari, we encourage you
 to subscribe to our commercial offering for the latest updates and information
-about the TDM distribution as well as for early-access to features included in
-the TDM distribution.
+about the TEAM distribution as well as for early-access to features included in
+the TEAM distribution.
 
 With a Takari subscription you'll have the ability to receive direct support
 from Takari's team of open source experts.

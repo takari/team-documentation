@@ -12,4 +12,4 @@ default:
   fig: "Figure "
   tab: "Table "
   indent: "\\qquad"
-  thanks: "Thank you for using TDM and reading this book."
+  thanks: "Thank you for using the Takari Extensions for Apache Maven TEAM and reading this book."
