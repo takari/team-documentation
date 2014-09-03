@@ -1,282 +1,216 @@
+
 <!DOCTYPE html>
-<html lang="en" class=" js cssanimations csstransitions"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Takari | {{ page.title }}</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="takari.io">
-    <meta name="author" content="takari.io">
-    <meta property="twitter:account_id" content="4503599627980362">  
-    
-    <!-- CSS Global Compulsory-->
-    <link rel="stylesheet" href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/8578ad40f4753a837fd4f8099c9a78cc.css">
-    <link rel="stylesheet" href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/b33f9be2c3ffbf519b40a489af96b27b.css">
-    <link rel="stylesheet" href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/b4b691367a406fa77c610052449d34e6.css">
-    <link rel="shortcut icon" href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/optimised/favicon-1398045640000.ico">        
-    <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/2c2b293357e3926fba7f6c8ded448982.css">
-    <link rel="stylesheet" href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/5c83eca41ca1aead9f74469440c6602a.css">
-    <link rel="stylesheet" href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/e97c647d79b33398586006e88d56e088.css">
-    <!-- Syntax Highlighting -->
-    <link rel="stylesheet" href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/88259176f5cfba0b4007c4d30b5867aa.css">
-    
-    <!-- GA -->
-  <style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
-.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
-.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
-.fb_connect_bar_container div,.fb_connect_bar_container span,.fb_connect_bar_container a,.fb_connect_bar_container img,.fb_connect_bar_container strong{background:none;border-spacing:0;border:0;direction:ltr;font-style:normal;font-variant:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal;vertical-align:baseline}.fb_connect_bar_container{position:fixed;left:0 !important;right:0 !important;height:42px !important;padding:0 25px !important;margin:0 !important;vertical-align:middle !important;border-bottom:1px solid #333 !important;background:#3b5998 !important;z-index:99999999 !important;overflow:hidden !important}.fb_connect_bar_container_ie6{position:absolute;top:expression(document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px":body.scrollTop+"px")}.fb_connect_bar{position:relative;margin:auto;height:100%;width:100%;padding:6px 0 0 0 !important;background:none;color:#fff !important;font-family:"lucida grande", tahoma, verdana, arial, sans-serif !important;font-size:13px !important;font-style:normal !important;font-variant:normal !important;font-weight:normal !important;letter-spacing:normal !important;line-height:1 !important;text-decoration:none !important;text-indent:0 !important;text-shadow:none !important;text-transform:none !important;white-space:normal !important;word-spacing:normal !important}.fb_connect_bar a:hover{color:#fff}.fb_connect_bar .fb_profile img{height:30px;width:30px;vertical-align:middle;margin:0 6px 5px 0}.fb_connect_bar div a,.fb_connect_bar span,.fb_connect_bar span a{color:#bac6da;font-size:11px;text-decoration:none}.fb_connect_bar .fb_buttons{float:right;margin-top:7px}
-.fbpluginrecommendationsbarleft,.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}.fbpluginrecommendationsbarleft{left:10px}.fbpluginrecommendationsbarright{right:10px}</style>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<title>Takari | Takari Extensions for Apache Maven TEAM -
+  Documentation</title>
+
+<!-- Meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description"
+  content="Takari is focused on continuous delivery for the Maven ecosystem and offers Apache Maven training classes">
+<meta name="author" content="takari.io">
+<meta property="twitter:account_id" content="4503599627980362">
+
+<!-- CSS Global Compulsory-->
+<link rel="stylesheet"
+  href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/f9404a916de3a7ae8f0cd71476e4f117.css">
+<link rel="stylesheet"
+  href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/221411937962ef085e8f75a9f11b1978.css">
+<link rel="stylesheet"
+  href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/a11fa98d11f45bfde7a7eb50e3011f04.css">
+<link rel="shortcut icon"
+  href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/optimised/favicon-1408655572000.ico">
+<!-- CSS Implementing Plugins -->
+<link rel="stylesheet"
+  href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/1654e7cac5269ca96de09de7b7ea8edc.css">
+<link rel="stylesheet"
+  href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/b5d15b4c5e5dbab06c4ee046697688cc.css">
+<link rel="stylesheet"
+  href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/a4b1af32e757033b94c04cb341436d79.css">
+<!-- Syntax Highlighting -->
+<link rel="stylesheet"
+  href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/88259176f5cfba0b4007c4d30b5867aa.css">
+
+<!-- GA -->
+<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46352323-1', 'takari.io');
+      ga('send', 'pageview');
+
+    </script>
 </head>
 
-  <body data-twttr-rendered="true">
-    <div class="wrapBlog">
-      <div class="header">
-        <div class="navbar navbar-default" role="navigation">
-          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="http://takari.io/">
-                <img id="logo-header" src="/images/takari_logo-1398045641000.png" alt="Takari">
-              </a>
-            </div>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle"
+              data-toggle="collapse"
+              data-target=".navbar-responsive-collapse">
+              <span class="sr-only">Toggle navigation</span> <span
+                class="icon-bar"></span> <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"> <img id="logo-header"
+              src="http://d1qmdf3vop2l07.cloudfront.net/takari.io/optimised/takari_logo-1408655572000.png"
+              alt="Takari">
+            </a>
+          </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-responsive-collapse">
-              <ul class="nav navbar-nav navbar-right">
-                  <li class="">
-                      <a href="http://takari.io/aboutus.html">About Us</a>
-                  </li>
-                  <li class="">
-                      <a href="http://takari.io/training.html">Training</a>
-                  </li>
-                  <li class="">
-                      <a href="http://takari.io/events.html">Events</a>
-                  </li>
-                  <li class="">
-                      <a href="http://takari.io/community.html">Community</a>
-                  </li>
-                  <li class="active">
-                      <a href="http://takari.io/blog.html">Blog</a>
-                  </li>
-                  <li class="active">
-                      <a href="/book/" class="cc-active cc-active">TDM Book</a>
-                  </li>
-                
-              </ul>
-            </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div
+            class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class=""><a href="/aboutus.html">About Us</a></li>
+              <li class=""><a href="/training.html">Training</a></li>
+              <li class=""><a href="/events.html">Events</a></li>
+              <li class=""><a href="/community.html">Community</a></li>
+              <li class=""><a href="/blog.html">Blog</a></li>
+              <li class="active"><a href="/book/index.html" class="cc-active">Documentation</a></li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="container" style="margin-top:20px;">
-          <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./takari-site_files/dgdTycPTSRj.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./takari-site_files/dgdTycPTSRj(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="f10c889e6c" frameborder="0" allowtransparency="true" scrolling="no" src="./takari-site_files/ping.html" style="display: none;"></iframe></div></div></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=805501669464996";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
-  <script type="text/javascript">
-    (function(){
-     var twitterWidgets = document.createElement('script');
-     twitterWidgets.type = 'text/javascript';
-     twitterWidgets.async = true;
-     twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-     document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-     })();
-  </script>
-
-  <script type="text/javascript">
-    (function() {
-      var po = document.createElement('script');
-      po.type = 'text/javascript'; po.async = true;
-      po.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(po, s);
-    })();
-  </script>
-
-<div class="row blog-page">    
-  <div class="col-md-8">  
-
-{{ content }}
-
+    </div>
+    <div class="container" style="margin-top: 20px;">
+    <h1>Takari Extensions for Apache Maven TEAM - Documentation</h1>
+    <p><a href="index.html">Table of Contents</a>
+      | <a href="../ebook/team-book.en.pdf">PDF format</a>
+      | <a href="../ebook/team-book.en.epub">epub format</a>
+      | <a href="../ebook/team-book.en.mobi">mobi format</a>
+    </p>
+    
+    {{ content }}
+    </div>
   </div>
-  <!-- Sidebar -->
-  <div class="col-md-1"></div>
-  <div class="col-md-3" data-twttr-id="twttr-sandbox-0">
-    <div style="padding-top:20px;">
-      <div class="headline">
-        <h2>Maven Training</h2>
-      </div>
-        <p>To use Maven correctly you'll need to understand the fundamentals. This class is designed to deliver just that.</p>
-        <a href="http://takari.io/training.html?utm_source=blog&utm_medium=banner&utm_campaign=takaritraining">
-          <img src="/images/trainingpromo_blog-1399385610000.jpg" alt="Introduction to Maven" style="padding-top:10px;border:0px;">
-        </a>
-    </div>
-    <div class="margin-bottom-10 clearfix">&nbsp;</div>
-    <div>
-      <div class="headline">
-                <h2>Stay Connected</h2>
-        </div>
-              <ul class="social-icons">
-                <li>
-                  <a href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/optimised/rss-1400779787000.xml" data-original-title="Feed" class="social_rss" target="_blank"></a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/takari.io" data-original-title="Facebook" class="social_facebook" target="_blank"></a>
-                </li>
-                <li>
-                  <a href="http://twitter.com/takari_io" data-original-title="Twitter" class="social_twitter" target="_blank"></a>
-                </li>
-                <li>
-                  <a href="https://plus.google.com/u/0/b/113247990055413254822/113247990055413254822/posts" data-original-title="Google Plus" class="social_googleplus" target="_blank"></a>
-                </li>
-                <li>
-                  <a href="https://github.com/takari" data-original-title="Github" class="social_github" target="_blank"></a>
-                </li>
-                <li>
-                  <a href="http://instagram.com/takari_io#" data-original-title="Instagram" class="social_instagram" target="_blank"></a>
-                </li>
-                <li>
-                  <a href="http://www.youtube.com/channel/UCOvO2AfBTJXGj8xaVf2yccw" data-original-title="YouTube" class="social_youtube" target="_blank"></a>
-                </li>
-              </ul>
-    </div>
-    
-    <div class="margin-bottom-20 clearfix">&nbsp;</div>
-    
-    <div>
-      <div class="headline">
-        <h2>Newsletter</h2>
-      </div>
-      <p>Subscribe to our newsletter and stay up to date with the latest news and events!</p>
-      <a href="http://takari.io/newslettersignup.html">
-        <button class="btn-u" type="button">Subscribe</button>
-      </a>
-    </div>
-    
-    <div class="margin-bottom-20 clearfix">&nbsp;</div>
-    
-  <iframe id="twitter-widget-5" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-timeline twitter-timeline-rendered" title="Twitter Timeline" height="600" style="border: none; max-width: 100%; min-width: 180px; width: 243px;"></iframe>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-</div>
-
-      </div>
-    </div>
-    <div class="stickyFooter">
-      <div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 md-margin-bottom-40">
-                <!-- Monthly Newsletter -->
-              <div class="headline">
-                <h2>Newsletter</h2>
-              </div>
-              <p>Subscribe to our newsletter and stay up to date with the latest news and events!</p>
-              <a href="http://takari.io/newslettersignup.html">
-                <button class="btn-u" type="button">Subscribe</button>
-              </a>
-            </div><!--/col-md-4-->
-
-            <div class="col-md-4 md-margin-bottom-40">
+  <div class="stickyFooter">
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 md-margin-bottom-40">
             <!-- Monthly Newsletter -->
-              <div class="headline">
-                <h2>Contact Us</h2>
-              </div>
-              <address class="md-margin-bottom-40">
-                Takari HQ
-                <br>
-                Guelph, ON, CA
-                <br>
-                Fax: 1 519 489 1329
-                <br>
-                Email:
-                <a href="mailto:team@takari.io" class="">team@takari.io</a>
-              </address>
+            <div class="headline">
+              <h2>Newsletter</h2>
             </div>
-            <div class="col-md-4">
-              <div class="headline">
-                <h2>Stay Connected</h2>
-              </div>
-              <ul class="social-icons">
-                <li>
-                  <a href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/optimised/rss-1400779787000.xml" data-original-title="Feed" class="social_rss" target="_blank"></a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/takari.io" data-original-title="Facebook" class="social_facebook" target="_blank"></a>
-                </li>
-                <li>
-                  <a href="http://twitter.com/takari_io" data-original-title="Twitter" class="social_twitter" target="_blank"></a>
-                </li>
-                <li>
-                  <a href="https://plus.google.com/u/0/b/113247990055413254822/113247990055413254822/posts" data-original-title="Google Plus" class="social_googleplus" target="_blank"></a>
-                </li>
-                <li>
-                  <a href="https://github.com/takari" data-original-title="Github" class="social_github" target="_blank"></a>
-                </li>
-                <li>
-                  <a href="http://instagram.com/takari_io#" data-original-title="Instagram" class="social_instagram" target="_blank"></a>
-                </li>
-                <li>
-                  <a href="http://www.youtube.com/channel/UCOvO2AfBTJXGj8xaVf2yccw" data-original-title="YouTube" class="social_youtube" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
+            <p>Subscribe to our newsletter and stay up to date with
+              the latest news and events!</p>
+            <a href="/newslettersignup.html">
+              <button class="btn-u" type="button">Subscribe</button>
+            </a>
           </div>
-        </div>
-      </div>
+          <!--/col-md-4-->
 
-      <div class="copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <p class="copyright-space">
-                2014 ©
-                Takari Inc. ALL Rights Reserved.
-                <a href="http://takari.io/privacypolicy.html">Privacy Policy</a>
-              </p>
+          <div class="col-md-4 md-margin-bottom-40">
+            <!-- Monthly Newsletter -->
+            <div class="headline">
+              <h2>Contact Us</h2>
             </div>
-            <div class="col-md-6">
-              <a href="http://takari.io/">
-                <img id="logo-footer" src="/images/logo2-default.png" class="pull-right" alt="" style="display:none;">
-              </a>
+            <address class="md-margin-bottom-40">
+              Takari HQ <br> Guelph, ON, CA <br> Fax: 1 519
+              489 1329 <br> Email: <a href="mailto:team@takari.io"
+                class="">team@takari.io</a>
+            </address>
+          </div>
+          <div class="col-md-4">
+            <div class="headline">
+              <h2>Stay Connected</h2>
             </div>
+            <ul class="social-icons">
+              <li><a
+                href="http://d1qmdf3vop2l07.cloudfront.net/takari.io/optimised/rss-1408655571000.xml"
+                data-original-title="Feed" class="social_rss"
+                target="_blank"></a></li>
+              <li><a href="https://www.facebook.com/takari.io"
+                data-original-title="Facebook" class="social_facebook"
+                target="_blank"></a></li>
+              <li><a href="http://twitter.com/takari_io"
+                data-original-title="Twitter" class="social_twitter"
+                target="_blank"></a></li>
+              <li><a
+                href="https://plus.google.com/u/0/b/113247990055413254822/113247990055413254822/posts"
+                data-original-title="Google Plus"
+                class="social_googleplus" target="_blank"></a></li>
+              <li><a href="https://github.com/takari"
+                data-original-title="Github" class="social_github"
+                target="_blank"></a></li>
+              <li><a href="http://instagram.com/takari_io#"
+                data-original-title="Instagram" class="social_instagram"
+                target="_blank"></a></li>
+              <li><a
+                href="http://www.youtube.com/channel/UCOvO2AfBTJXGj8xaVf2yccw"
+                data-original-title="YouTube" class="social_youtube"
+                target="_blank"></a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- JS Global Compulsory -->
-    <script type="text/javascript" src="./takari-site_files/5c039f3e12b42579ef5682cbe7c78ea8.js"></script>
-    <script type="text/javascript" src="./takari-site_files/ff6bfad178c29cd8dd6c1ae4e063b041.js"></script>
-    <script type="text/javascript" src="./takari-site_files/fdb8adcf85becc97f224198ebea6905c.js"></script>
-    <script type="text/javascript" src="./takari-site_files/65229fab62fd1469a8c15ac55b32c0a7.js"></script>
-    <script type="text/javascript" src="./takari-site_files/5472ae44082106c6e567b3a467302efc.js"></script>
-    <!-- JS Implementing Plugins -->
-    <script type="text/javascript" src="./takari-site_files/ae12832ff7a6c6d5800e6f5f03181324.js"></script>
-    <script type="text/javascript" src="./takari-site_files/e01d74593abd4ddf82c14d843cfc6e54.js"></script>
-    <script type="text/javascript" src="./takari-site_files/ae854b24d957dab3c8588f78443bf519.js"></script> 
-    <!-- JS Page Level -->
-    <script type="text/javascript" src="./takari-site_files/17ecd2fadefb346ff726b61f8530e5b0.js"></script>
-    <script type="text/javascript" src="./takari-site_files/4eed2022a94d65188c4ad21037fc7b1d.js"></script>
-    <script type="text/javascript">
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="copyright-space">
+              2014 &copy; Takari Inc. ALL Rights Reserved. <a
+                href="/privacypolicy.html">Privacy Policy</a>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <a href="/"> <img id="logo-footer"
+              src="http://takari.io/assets/img/logo2-default.png"
+              class="pull-right" alt="" style="display: none;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Global Compulsory -->
+  <script type="text/javascript"
+    src="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/5c039f3e12b42579ef5682cbe7c78ea8.js"></script>
+  <script type="text/javascript"
+    src="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/ff6bfad178c29cd8dd6c1ae4e063b041.js"></script>
+  <script type="text/javascript"
+    src="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/fdb8adcf85becc97f224198ebea6905c.js"></script>
+  <script type="text/javascript"
+    src="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/65229fab62fd1469a8c15ac55b32c0a7.js"></script>
+  <script type="text/javascript"
+    src="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/5472ae44082106c6e567b3a467302efc.js"></script>
+  <!-- JS Implementing Plugins -->
+  <script type="text/javascript"
+    src="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/ae12832ff7a6c6d5800e6f5f03181324.js"></script>
+  <script type="text/javascript"
+    src="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/e01d74593abd4ddf82c14d843cfc6e54.js"></script>
+  <script type="text/javascript"
+    src="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/ae854b24d957dab3c8588f78443bf519.js"></script>
+  <!-- JS Page Level -->
+  <script type="text/javascript"
+    src="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/17ecd2fadefb346ff726b61f8530e5b0.js"></script>
+  <script type="text/javascript"
+    src="http://d1qmdf3vop2l07.cloudfront.net/takari.io/compressed/4eed2022a94d65188c4ad21037fc7b1d.js"></script>
+  <script type="text/javascript">
       jQuery(document).ready(function() {
       App.init();
       App.initSliders();
       Index.initParallaxSlider();
       });
     </script>
-    <!--[if lt IE 9]>
+  <!--[if lt IE 9]>
         <script src="/assets/plugins/respond.js"></script>
     <![endif]-->
-  </div>
-  <div id="gleeBox" style="display:none" class="GleeThemeDefault gleeMediumSize"><input type="text" id="gleeSearchField" value="" autocomplete="off" class="ac_input GleeThemeDefault gleeMediumSize"><div id="gleeSub"><div id="gleeSubText"></div><div id="gleeSearchActivity"></div><div id="gleeSubURL"></div></div></div><div id="topcontrol" title="Scroll Back to Top" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer;"><img src="/images/up.png" style="width:51px; height:42px"></div><div id="window-resizer-tooltip" style="display: block;"><a href="http://takari.io/blog.html#" title="Edit settings" style="background-image: url(chrome-extension://kkelicaakdanhinjdeammmilcgefonfh/images/icon_19.png);"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1697</span> x <span class="tooltipHeight" id="winHeight">1178</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">1132</span> x <span class="tooltipHeight" id="vpHeight">708</span></div><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" style="display: none;"></iframe><iframe name="oauth2relay397450543" id="oauth2relay397450543" src="./takari-site_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body><style type="text/css">/*This block of style rules is injected by gleeBox*/.GleeReaped { background-color: #f9f2a5 !important; outline: 1px dotted #818181 !important; } .GleeHL { -webkit-box-shadow: hsla(71, 89%, 70%, 1) -2px -2px 0px, hsla(71, 89%, 70%, 1)  2px -2px 0px, hsla(71, 100%, 45%, 1) -2px  2px 0px, hsla(71, 100%, 45%, 1)  2px  2px 0px, hsla(71, 100%, 80%, 1)  0px 0px 0px 3px, rgba(42, 35, 0, 0.8)  1px  1px 3px 3px !important; border-radius: 3px !important; color: #000 !important; outline: none !important; border: none !important; background: -webkit-gradient(linear, left bottom, left top, color-stop(0, hsla(71, 100%, 47%, 1)), color-stop(1, hsla(71, 89%, 70%, 1))) !important;} a.GleeHL, .GleeHL a {color: #000 !important;} input[type=checkbox].GleeHL, input[type=radio].GleeHL { outline: 5px solid hsla(71, 89%, 70%, 1) !important;}</style></html>
+</body>
+</html>
