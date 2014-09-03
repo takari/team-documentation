@@ -133,7 +133,7 @@ def generate_pages(lang, chapter, content)
     layout = lang == 'en' ? 'master' : 'translation'
     html = "---
 layout: #{layout}
-title: TEAM Documentation #{chapter}.#{section} #{full_title}
+title: Chapter #{chapter}.#{section} #{full_title}
 ---
 "
     if section_match
