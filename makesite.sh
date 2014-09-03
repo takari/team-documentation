@@ -15,6 +15,7 @@ rm -rf site/figures/*
 
 echo "makesite - copy ------------------------------------------------------"
 mkdir -p site/ebook
+mkdir -p site/book
 cp -v team-book.en.epub site/ebook/ 
 cp -v team-book.en.mobi site/ebook/
 cp -v team-book.en.pdf site/ebook/
